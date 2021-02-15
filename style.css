@@ -7,6 +7,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.fond{
+    width: 100%;
+    object-fit: cover;
+    height: 50vh;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -23,7 +29,6 @@ a:hover {
     top: 0;
     bottom: 0;
     width: 100%;
-    z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
@@ -275,6 +280,8 @@ a:hover {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -289,7 +296,6 @@ a:hover {
 
 .navbar {
     margin-bottom: 0;
-    z-index: 1;
 }
 
 .navbar-brand {
@@ -319,7 +325,6 @@ a:hover {
     padding-top: 2px;
     margin-right: -16px;
     float: right;
-    z-index: 1;
 }
 
 .nav > li {
@@ -359,7 +364,6 @@ a:hover {
 .nav-invert .navbar-brand {
     float: right;
     position: relative;
-    z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -516,8 +520,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
-    z-index: 500;
+    opacity: 0.5;
     transition: all .3s ease-in-out;
 }
 
@@ -541,17 +544,15 @@ a[data-lightbox]:hover::before {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
     width: 50px;
-    height: 50px;
-    margin-left: -25px;
     border-radius: 50%;
     background: rgba(0, 0, 0, .6);
     color: #FFF;
     font-weight: 100;
-    z-index: 1;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    left: 45%;
 }
 
 a[data-lightbox]:hover img {
@@ -592,7 +593,6 @@ a[data-lightbox]:hover img {
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 20;
     background: rgba(0, 0, 0, .5);
     border: none;
     line-height: 30px;
@@ -615,7 +615,6 @@ a[data-lightbox]:hover img {
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
-    z-index: 1;
     opacity: 0.4;
 }
 
@@ -680,11 +679,6 @@ p {
     font-size: 11px;
 }
 
-.tight-width-whitespace {
-    max-width: 600px;
-    margin: auto auto auto auto;
-}
-
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
@@ -702,6 +696,8 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    padding-bottom: 3%;
+    padding-top: 2%;
 }
 
 h2 {
