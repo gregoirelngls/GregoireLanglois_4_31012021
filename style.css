@@ -309,8 +309,8 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
-    margin: 0 5px 0 0;
+    height: 8vh;
+    width: auto;
     display: inline;
 }
 
@@ -1067,7 +1067,7 @@ h4 {
         box-shadow: none;
     }
     .navbar-brand img {
-        max-height: 40px;
+        height: 8vh;
         width: auto;
     }
     .nav-invert .navbar-header {
