@@ -801,6 +801,30 @@ p {
     font-weight: 700;
 }
 
+.titre{
+    color:#352C4E;
+    font-weight:bold;
+}
+
+.blue{
+    color:#352C4E;
+    font-weight:bold;
+}
+
+.blanc{
+    color:white;
+}
+
+.black{
+    color:black;
+}
+
+.backblue{
+    color:white;
+    font-size:2em;
+    font-weight:bold;
+}
+
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
