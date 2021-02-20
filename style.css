@@ -1,5 +1,4 @@
 body{margin:0;padding:0;background:#FFF;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.fond{width:100%;object-fit:cover;height:50vh}
 a,button{transition:all .3s ease-in-out;outline:0 !important}
 a:hover{text-decoration:none;cursor:pointer}
 #page-loading-blocs-notifaction{position:fixed;top:0;bottom:0;width:100%;background:#fff url("img/pageload-spinner.gif") no-repeat center center}
@@ -64,7 +63,7 @@ a{background-color:transparent}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 user agent stylesheet a:-webkit-any-link{color:-webkit-link;cursor:pointer;text-decoration:underline}
 .d-bloc .panel,.l-bloc{color:rgba(0,0,0,.5)}
-body{font-display: swap;margin:0;padding:0;background:#FFF;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{margin:0;padding:0;background:#FFF;overflow-x:hidden;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}
 html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}
 html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
@@ -145,7 +144,7 @@ h1{color:#333 !important}
 h4{color:#333 !important}
 .icons{margin-bottom:14px;margin-top:24px}
 .white{color:#fff !important;font-weight:bold}
-.portfolio-thumb{margin-bottom:24px}
+.portfolio-thumb{margin-bottom:24px;width:100%;object-fit:cover;height:50vh}
 .portfolio-row{margin-bottom:44px;margin-top:50px}
 .avatar{box-shadow:0 4px 9px rgba(0,0,0,.3)}
 .black-background{background-color:rgba(165,147,99,.7);padding:40px 40px 40px 40px}
@@ -171,16 +170,14 @@ h4{color:#333 !important}
 @media(max-width:992px) and (min-width:768px){.navbar .nav{max-width:80%}
 .nav-center.navbar .nav{max-width:100%}
 }
-@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation:landscape){.b-parallax{background-attachment:scroll}
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation:landscape){.b-parallax{background-attachment:scroll}
 }
-@media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:1.5){.b-parallax{background-attachment:scroll}
+@media only screen and (min-width:1024px) and (max-width:1366px) and (-webkit-min-pixel-ratio:1.5){.b-parallax{background-attachment:scroll}
 }
 @media(max-width:991px){.container{width:100%}
 .page-container,#hero-bloc{overflow-x:hidden;position:relative}
-.bloc{padding-left:constant(safe-area-inset-left);padding-right:constant(safe-area-inset-right)}
 .bloc-group,.bloc-group .bloc{display:block;width:100%}
-.bloc-fill-screen .fill-bloc-top-edge,.bloc-fill-screen .fill-bloc-bottom-edge{padding:0 20px;padding-left:constant(safe-area-inset-left);padding-right:constant(safe-area-inset-right)}
-}
+.bloc-fill-screen .fill-bloc-top-edge,.bloc-fill-screen .fill-bloc-bottom-edge{padding:0 20px}}
 @media(max-width:767px){.bg-banniere{background-image:url("img/la-chouette-agence-banniere-p.jpg")}
 .page-container{overflow-x:hidden;position:relative}
 h1,h2,h3,h4,h5,h6,p,#disqus_thread{padding-left:10px !important;padding-right:10px !important}
